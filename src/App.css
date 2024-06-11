@@ -27,6 +27,14 @@
   cursor: pointer;
 }
 
+.add-button:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgb(28, 203, 28);
+  font-size: larger;
+  color: white;
+}
+
 .to-do-list ol {
   list-style-type: none;
   padding: 0;
@@ -55,6 +63,14 @@
   padding: 5px 10px;
 }
 
+.delete-button:hover {
+  background-color: hsl(0, 88%, 60%);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: larger;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -68,6 +84,13 @@ footer a {
   margin: 0 10px; /* Adjust as needed */
   color: lightcoral;
   text-decoration: none;
+}
+
+footer a:hover {
+  margin: 0 10px; /* Adjust as needed */
+  color: blue;
+  text-decoration: none;
+  font-size: x-large;
 }
 
 /* For iPhones */

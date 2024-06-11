@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function ToDoList() {
-  const [tasks, setTasks] = useState([
-    "Make a portfolio",
-    "Style the counter app",
-    "Add local storage to the To-Do-List",
-  ]);
+  // State to hold the tasks
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || [
+      "Make a portfolio",
+      "Style the counter app",
+      "Add local storage to the To-Do-List",
+    ]
+  );
+  // State to hold the new task input
   const [newTask, setNewTask] = useState("");
+
+  // Effect to update localStorage whenever tasks change
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   // function for displaying input text
   function handleInputChange(event) {
@@ -18,6 +27,12 @@ function ToDoList() {
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
       setNewTask("");
+    }
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      addTask();
     }
   }
 
@@ -35,6 +50,7 @@ function ToDoList() {
           placeholder="Enter a Task"
           value={newTask}
           onChange={handleInputChange}
+          onKeyPress={handleKeyPress}
         />
         <button className="add-button" onClick={addTask}>
           Add
