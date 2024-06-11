@@ -19,6 +19,12 @@ function App() {
     setInput("")
   }
 
+  const deleteToDo = (id) => {
+    const newList = list.filter((todo) => todo.id !== id)
+
+    setList(newList)
+  }
+
   return (
     <div className="App">
       <h1>To Do List</h1>
@@ -32,7 +38,7 @@ function App() {
         {list.map((todo) => (
           <li key={todo.id}>
             {todo.todo}
-            <button>&times;</button>
+            <button onClick={() => deleteToDo(todo.id)}>&times;</button>
           </li>
         ))}
       </ul>
