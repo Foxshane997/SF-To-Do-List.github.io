@@ -1,7 +1,5 @@
 /* ToDoList.css */
-/* Make sure to add media query! */
 
-/* For the List */
 .to-do-list {
   text-align: center;
   max-width: 600px;
@@ -81,13 +79,13 @@ footer {
 }
 
 footer a {
-  margin: 0 10px; /* Adjust as needed */
+  margin: 0 10px;
   color: lightcoral;
   text-decoration: none;
 }
 
 footer a:hover {
-  margin: 0 10px; /* Adjust as needed */
+  margin: 0 10px;
   color: blue;
   text-decoration: none;
   font-size: x-large;
@@ -95,10 +93,8 @@ footer a:hover {
 
 /* For iPhones */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  /* Insert iPhone specific CSS here */
 }
 
 /* For Apple tablets */
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
-  /* Insert Apple tablet specific CSS here */
 }
