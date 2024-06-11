@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# A To-Do-List Application
+This is a personal project for a To-Do-List for my personal use.
+A practice if you will.
+
 ## Available Scripts
 
 In the project directory, you can run:
