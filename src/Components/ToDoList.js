@@ -3,11 +3,7 @@ import React, { useState, useEffect } from "react";
 function ToDoList() {
   // State to hold the tasks
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || [
-      "Make a portfolio",
-      "Style the counter app",
-      "Add local storage to the To-Do-List",
-    ]
+    JSON.parse(localStorage.getItem("tasks")) || ["Make a portfolio"]
   );
   // State to hold the new task input
   const [newTask, setNewTask] = useState("");
