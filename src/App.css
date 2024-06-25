@@ -18,6 +18,11 @@
 .to-do-list input {
   margin-right: 10px;
   padding: 5px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: medium;
+  color: black;
 }
 
 .to-do-list .add-button {
@@ -30,7 +35,8 @@
   border-radius: 10px;
   background-color: rgb(28, 203, 28);
   font-size: larger;
-  color: white;
+  font-weight: 600;
+  color: black;
 }
 
 .to-do-list ol {
@@ -44,7 +50,7 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 4px;
   max-width: 600px;
 }
@@ -64,6 +70,7 @@
 .delete-button:hover {
   background-color: hsl(0, 88%, 60%);
   color: white;
+  font-weight: 500;
   border: 2px solid white;
   border-radius: 10px;
   font-size: larger;
@@ -84,12 +91,13 @@ footer {
 
 footer a {
   margin: 0 10px;
-  color: lightcoral;
+  color: black;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
-  color: blue;
+  color: lightcoral;
   font-size: x-large;
 }
 

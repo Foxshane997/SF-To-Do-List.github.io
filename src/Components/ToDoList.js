@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 function ToDoList() {
-  // State to hold the tasks
+  useEffect(() => {
+    document.title = "To-Do";
+    // Changing the tab title name
+    return () => {
+      document.title = "To-Do";
+    };
+  }, []);
+
+  // State to hold the tasks array in local storage
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || ["Make a portfolio"]
   );
-  // State to hold the new task input
+
   const [newTask, setNewTask] = useState("");
 
   // Effect to update localStorage whenever tasks change
@@ -26,12 +34,14 @@ function ToDoList() {
     }
   }
 
+  // Event handler for pressing enter for submit button
   function handleKeyPress(event) {
     if (event.key === "Enter") {
       addTask();
     }
   }
 
+  // Deleting a task
   function deleteTask(index) {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
