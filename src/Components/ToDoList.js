@@ -11,7 +11,7 @@ function ToDoList() {
 
   // State to hold the tasks array in local storage
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || ["Make a portfolio"]
+    JSON.parse(localStorage.getItem("tasks")) || []
   );
 
   const [newTask, setNewTask] = useState("");
