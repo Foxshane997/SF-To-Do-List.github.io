@@ -11,6 +11,9 @@
   padding: 20px;
   background-color: #e0e0e0; 
   border-radius: 15px;
+  max-height: 80vh; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-bottom: 100px; /* Add padding to ensure the footer doesn't overlap */
 }
 
 .to-do-list h1 {
@@ -52,6 +55,7 @@
 .to-do-list ol {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .to-do-list li {
@@ -100,6 +104,7 @@ footer {
   left: 0;
   right: 0;
   border-radius: 15px;
+  background-color: #e0e0e0;
 }
 
 footer a {
