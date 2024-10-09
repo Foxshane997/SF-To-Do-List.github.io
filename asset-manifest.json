@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/SF-To-Do-List.github.io/static/css/main.b4f03f23.css",
-    "main.js": "/SF-To-Do-List.github.io/static/js/main.ebebbdaa.js",
-    "static/js/453.134bcf2e.chunk.js": "/SF-To-Do-List.github.io/static/js/453.134bcf2e.chunk.js",
+    "main.css": "/SF-To-Do-List.github.io/static/css/main.50f580cb.css",
+    "main.js": "/SF-To-Do-List.github.io/static/js/main.f68a74a6.js",
     "index.html": "/SF-To-Do-List.github.io/index.html",
-    "main.b4f03f23.css.map": "/SF-To-Do-List.github.io/static/css/main.b4f03f23.css.map",
-    "main.ebebbdaa.js.map": "/SF-To-Do-List.github.io/static/js/main.ebebbdaa.js.map",
-    "453.134bcf2e.chunk.js.map": "/SF-To-Do-List.github.io/static/js/453.134bcf2e.chunk.js.map"
+    "main.50f580cb.css.map": "/SF-To-Do-List.github.io/static/css/main.50f580cb.css.map",
+    "main.f68a74a6.js.map": "/SF-To-Do-List.github.io/static/js/main.f68a74a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4f03f23.css",
-    "static/js/main.ebebbdaa.js"
+    "static/css/main.50f580cb.css",
+    "static/js/main.f68a74a6.js"
   ]
 }
